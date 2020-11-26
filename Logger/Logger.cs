@@ -1,43 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Logger
 {
-    public class Starter
+    class Logger
     {
-        public void Run()
+        private Logger()
+        { }
+        private static Logger instance;
+        private static List<string> LogMessages = new List<string>();
+        public static Logger GetInstance()
         {
-            var rand = new Random();
-            var action = new Actions();
-            var log = Logger.GetInstance();
-
-            for (int i = 0; i < 100; i++)
+            if (instance == null)
             {
-                try
-                {
-                    int funcRandNum = rand.Next(1, 4);
-                    switch (funcRandNum)
-                    {
-                        case 1:
-                            action.Info();
-                            break;
-                        case 2:
-                            action.Warning();
-                            break;
-                        case 3:
-                            action.Error();
-                            break;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(log.NewMessage("Error", ex));
-                }
+                instance = new Logger();
             }
+            return instance;
+        }
+        public string NewMessage(string MessageLevel, Exception ex)
+        {
+            return $"{MessageLevel}, Action failed by reason: {ex.StackTrace}";
         }
 
+        public string NewMessage(string MessageLevel, string Message)
+        {
+            return $"{MessageLevel}, Message: {Message}";
+        }
     }
 }
