@@ -1,0 +1,9 @@
+C:\Users\Даниил\source\repos\Logger\AddLogger\bin\Debug\netstandard2.0\AddLogger.deps.json
+C:\Users\Даниил\source\repos\Logger\AddLogger\bin\Debug\netstandard2.0\AddLogger.dll
+C:\Users\Даниил\source\repos\Logger\AddLogger\bin\Debug\netstandard2.0\AddLogger.pdb
+C:\Users\Даниил\source\repos\Logger\AddLogger\obj\Debug\netstandard2.0\AddLogger.csprojAssemblyReference.cache
+C:\Users\Даниил\source\repos\Logger\AddLogger\obj\Debug\netstandard2.0\AddLogger.AssemblyInfoInputs.cache
+C:\Users\Даниил\source\repos\Logger\AddLogger\obj\Debug\netstandard2.0\AddLogger.AssemblyInfo.cs
+C:\Users\Даниил\source\repos\Logger\AddLogger\obj\Debug\netstandard2.0\AddLogger.csproj.CoreCompileInputs.cache
+C:\Users\Даниил\source\repos\Logger\AddLogger\obj\Debug\netstandard2.0\AddLogger.dll
+C:\Users\Даниил\source\repos\Logger\AddLogger\obj\Debug\netstandard2.0\AddLogger.pdb
